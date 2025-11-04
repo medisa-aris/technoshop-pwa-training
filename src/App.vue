@@ -1,26 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AppHeader />
+  <AppHero />
+  <AppDiscount />
+  <BestSeller />
+  <AllProduct />
+  <EmailSubscribe />
+  <AppFooter />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/Header.vue'
+import AppHero from './components/Hero.vue'
+import AppDiscount from './components/Discount.vue'
+import BestSeller from './components/BestSeller.vue'
+import AllProduct from './components/AllProduct.vue'
+import EmailSubscribe from './components/EmailSubscribe.vue'
+import AppFooter from './components/Footer.vue'
+// import { onMounted } from 'vue'
+
+// onMounted(() => {
+//   const script = document.createElement('script')
+//   script.src = './assets/js/cookie-consent.js'
+//   script.type = 'text/javascript'
+//   script.charset = 'UTF-8'
+//   document.body.appendChild(script)
+// })
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppHeader,
+    AppHero,
+    AppDiscount,
+    BestSeller,
+    AllProduct,
+    EmailSubscribe,
+    AppFooter
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
