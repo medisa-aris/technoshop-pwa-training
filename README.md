@@ -1,4 +1,4 @@
-# sfa-app
+# convert sfa-app to PWA on Vue.js
 
 ## Project setup
 ```
@@ -18,6 +18,11 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Running
+```
+npx serve dist
 ```
 
 ### Customize configuration
